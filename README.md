@@ -44,6 +44,7 @@ $ npm run build-docs-preset
 ## License
 
 Original work Copyright 2017 SmartBear Software
+
 Modified layout Copyright 2017 Telenor Digital
 
 Licensed under the Apache License, Version 2.0 (the "License");
