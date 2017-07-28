@@ -3,19 +3,17 @@
 
 .info
 {
-    margin: 50px 0;
-
     hgroup.main
     {
         margin: 0 0 20px 0;
         a
         {
-            font-size: 12px;
+            font-size: 16px;
         }
     }
     p, li, table
     {
-        font-size: 14px;
+        font-size: 16px;
 
         @include text_body();
     }
@@ -37,7 +35,7 @@
 
     a
     {
-        font-size: 14px;
+        font-size: 16px;
 
         transition: all .4s;
 

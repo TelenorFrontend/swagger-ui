@@ -28,19 +28,13 @@ export default class DocsLayout extends React.Component {
 
       <Container className='swagger-ui'>
         { loadingStatus === "loading" &&
-          <div className="info">
-            <h4 className="title">Loading...</h4>
-          </div>
+          <div className="info">Loading...</div>
         }
         { loadingStatus === "failed" &&
-          <div className="info">
-            <h4 className="title">Failed to load spec.</h4>
-          </div>
+          <div className="info">Failed to load spec.</div>
         }
         { loadingStatus === "failedConfig" &&
-          <div className="info" style={{ maxWidth: "880px", marginLeft: "auto", marginRight: "auto", textAlign: "center" }}>
-            <h4 className="title">Failed to load config.</h4>
-          </div>
+          <div className="info">Failed to load config.</div>
         }
         { !loadingStatus || loadingStatus === "success" && <DocsBaseLayout /> }
       </Container>

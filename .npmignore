@@ -4,3 +4,4 @@
 !package.json
 !dist/swagger-ui-docs-preset.js
 !dist/swagger-ui-docs-preset.js.map
+!dist/swagger-ui-docs-preset.css

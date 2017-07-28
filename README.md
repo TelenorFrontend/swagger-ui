@@ -10,9 +10,10 @@ Install using npm
 $ npm install --save https://github.com/TelenorFrontend/swagger-ui-docs-preset.git
 ```
 
-Include file found in `node_modules/swagger-ui-docs-preset/dist/swagger-ui-docs-preset.js` on your SwaggerUi page
+Include preset found in `node_modules/swagger-ui-docs-preset/dist/swagger-ui-docs-preset.js` and the stylesheet at `node_modules/swagger-ui-docs-preset/dist/swagger-ui-docs-preset.css` on your SwaggerUi page.
 
 ```
+<script src="style/swagger-ui-docs-preset.css"></script>
 <script src="js/swagger-ui-docs-preset.js"></script>
 ```
 
@@ -35,7 +36,7 @@ Instantiate the SwaggerUi object as below:
 
 ## Modifying
 
-To modify the layout, a good place to start would be the `src/docs-preset` folder after cloning and installing the dependencies. After making your changes, run the following command to pack the preset.
+To modify the layout, the react components can be found in `src/docs-preset` folder after cloning and installing the dependencies. The sccs can be found in `style`. After making your changes, run the following command to pack the preset and stylesheet.
 
 ```
 $ npm run build-docs-preset

@@ -14,9 +14,7 @@ class Path extends React.Component {
     let { host, basePath } = this.props
 
     return (
-      <pre className="base-url">
-        [ Base URL: {host}{basePath} ]
-      </pre>
+      <span>Base URL: {host}{basePath}</span>
     )
   }
 }
@@ -59,8 +57,8 @@ class License extends React.Component {
     return (
       <div>
         {
-          url ? <a target="_blank" href={ url }>{ name }</a>
-        : <span>{ name }</span>
+          url ? <span>License: <a target="_blank" href={ url }>{ name }</a></span>
+        : <span>License: { name }</span>
         }
       </div>
     )
@@ -91,27 +89,17 @@ export default class DocsInfo extends React.Component {
 
     return (
       <div className="info">
-        <hgroup className="main">
-          { host || basePath ? <Path host={ host } basePath={ basePath } /> : null }
-          { url && <a target="_blank" href={ url }><span className="url"> { url } </span></a> } { version && <span className="version"> { version } </span> }
-        </hgroup>
-
         <div className="description">
           <Markdown source={ description } />
         </div>
-
-        {
-          termsOfService && <div>
-            <a target="_blank" href={ termsOfService }>Terms of service</a>
-          </div>
-        }
-
-        { contact && contact.size ? <Contact data={ contact } /> : null }
-        { license && license.size ? <License license={ license } /> : null }
-        { externalDocsUrl ?
-            <a target="_blank" href={externalDocsUrl}>{externalDocsDescription || externalDocsUrl}</a>
-        : null }
-
+        <div className="tn-hint tn-hint--brand">
+          { host || basePath ? <Path host={ host } basePath={ basePath } /> : null }
+          { version && <div>Version: { version } </div> }
+          { url && <div>Open API Specification: <a target="_blank" href={ url }>{ url }</a></div> }
+          { termsOfService && <div><a target="_blank" href={ termsOfService }>Terms of service</a></div> }
+          { contact && contact.size ? <Contact data={ contact } /> : null }
+          { license && license.size ? <License license={ license } /> : null }
+        </div>
       </div>
     )
   }

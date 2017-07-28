@@ -1,6 +1,6 @@
 .model
 {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 300;
 
     @include text_code();
@@ -155,12 +155,7 @@ section.models
         transition: all .5s;
 
         border-radius: 4px;
-        background: rgba(#000,.05);
-
-        &:hover
-        {
-            background: rgba(#000,.07);
-        }
+        background: #f5f5f5;
 
         &:first-of-type
         {
@@ -185,7 +180,7 @@ section.models
     padding: 10px;
 
     border-radius: 4px;
-    background: rgba(#000,.1);
+    background: #f5f5f5;
 
     .model-jump-to-path
     {
