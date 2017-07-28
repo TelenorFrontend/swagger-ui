@@ -13,7 +13,7 @@ $ npm install --save https://github.com/TelenorFrontend/swagger-ui-docs-preset.g
 Include preset found in `node_modules/swagger-ui-docs-preset/dist/swagger-ui-docs-preset.js` and the stylesheet at `node_modules/swagger-ui-docs-preset/dist/swagger-ui-docs-preset.css` on your SwaggerUi page.
 
 ```
-<script src="style/swagger-ui-docs-preset.css"></script>
+<link href="style/swagger-ui-docs-preset.css" rel="stylesheet" />
 <script src="js/swagger-ui-docs-preset.js"></script>
 ```
 
