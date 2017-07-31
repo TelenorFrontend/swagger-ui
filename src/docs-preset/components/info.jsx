@@ -25,7 +25,7 @@ class Contact extends React.Component {
     data: PropTypes.object
   }
 
-  render(){
+  render() {
     let { data } = this.props
     let name = data.get("name") || "the developer"
     let url = data.get("url")
@@ -49,7 +49,7 @@ class License extends React.Component {
     license: PropTypes.object
   }
 
-  render(){
+  render() {
     let { license } = this.props
     let name = license.get("name") || "License"
     let url = license.get("url")

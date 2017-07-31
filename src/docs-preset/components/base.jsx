@@ -13,7 +13,7 @@ export default class DocsBaseLayout extends React.Component {
     getComponent: PropTypes.func.isRequired
   }
 
-  onFilterChange =(e) => {
+  onFilterChange = (e) => {
     let {target: {value}} = e
     this.props.layoutActions.updateFilter(value)
   }
@@ -61,7 +61,7 @@ export default class DocsBaseLayout extends React.Component {
             <Row className="information-container">
               <Col mobile={12}>
                 { info.count() ? (
-                  <DocsInfo info={ info } url={ url } host={ host } basePath={ basePath } externalDocs={externalDocs} getComponent={getComponent}/>
+                  <DocsInfo info={ info } url={ url } host={ host } basePath={ basePath } externalDocs={ externalDocs } getComponent={ getComponent }/>
                 ) : null }
               </Col>
             </Row>
