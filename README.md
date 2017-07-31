@@ -10,9 +10,10 @@ Install using npm
 $ npm install --save https://github.com/TelenorFrontend/swagger-ui-docs-preset.git
 ```
 
-Include preset found in `node_modules/swagger-ui-docs-preset/dist/swagger-ui-docs-preset.js` and the stylesheet at `node_modules/swagger-ui-docs-preset/dist/swagger-ui-docs-preset.css` on your SwaggerUi page.
+Include preset found in `node_modules/swagger-ui-docs-preset/dist/swagger-ui-docs-preset.js` and the stylesheet at `node_modules/swagger-ui-docs-preset/dist/swagger-ui-docs-preset.css` on your SwaggerUi page. The layout also requires some rules from [TelenorFrontend/component-library](https://github.com/TelenorFrontend/component-library) so make sure to also link it on the page.
 
 ```
+<link href="style/TelenorFrontend/component-library.css" rel="stylesheet" />
 <link href="style/swagger-ui-docs-preset.css" rel="stylesheet" />
 <script src="js/swagger-ui-docs-preset.js"></script>
 ```
@@ -35,6 +36,8 @@ Instantiate the SwaggerUi object as below:
 ```
 
 ## Modifying
+
+To set up a development environment, clone this repo and fetch the dist folder from [SwaggerUi](https://github.com/swagger-api/swagger-ui). It should contain everything needed to preview your changes. Modify the `dist/index.html` from [SwaggerUi](https://github.com/swagger-api/swagger-ui) as described in **How to use** and open it in a browser of your choice.
 
 To modify the layout, the react components can be found in `src/docs-preset` folder after cloning and installing the dependencies. The sccs can be found in `style`. After making your changes, run the following command to pack the preset and stylesheet.
 
