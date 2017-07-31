@@ -351,7 +351,7 @@ body
 
     li
     {
-        font-size: 16px;
+        font-size: 12px;
 
         min-width: 100px;
         min-width: 90px;
@@ -360,27 +360,6 @@ body
         cursor: pointer;
 
         @include text_headline();
-
-        &:first-of-type
-        {
-            position: relative;
-
-            padding-left: 0;
-
-            &:after
-            {
-                position: absolute;
-                top: 0;
-                right: 6px;
-
-                width: 1px;
-                height: 100%;
-
-                content: '';
-
-                background: rgba(#000,.2);
-            }
-        }
 
         &.active
         {

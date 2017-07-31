@@ -204,23 +204,12 @@
   padding: 0;
   list-style: none; }
   .swagger-ui .tab li {
-    font-size: 16px;
+    font-size: 12px;
     min-width: 100px;
     min-width: 90px;
     padding: 0;
     cursor: pointer;
     color: rgba(0, 0, 0, 0.87); }
-    .swagger-ui .tab li:first-of-type {
-      position: relative;
-      padding-left: 0; }
-      .swagger-ui .tab li:first-of-type:after {
-        position: absolute;
-        top: 0;
-        right: 6px;
-        width: 1px;
-        height: 100%;
-        content: '';
-        background: rgba(0, 0, 0, 0.2); }
     .swagger-ui .tab li.active {
       font-weight: bold; }
 
@@ -786,7 +775,7 @@
     color: rgba(0, 0, 0, 0.87); }
 
 .swagger-ui .parameters-col_description p {
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
   color: rgba(0, 0, 0, 0.87); }
 
@@ -815,60 +804,6 @@
 
 .swagger-ui .table-container {
   padding: 20px; }
-
-.swagger-ui .topbar {
-  padding: 8px 30px;
-  background-color: #89bf04; }
-  .swagger-ui .topbar .topbar-wrapper {
-    display: flex;
-    align-items: center; }
-  .swagger-ui .topbar a {
-    font-size: 1.5em;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    flex: 1;
-    max-width: 300px;
-    text-decoration: none;
-    color: #fff; }
-    .swagger-ui .topbar a span {
-      margin: 0;
-      padding: 0 10px; }
-  .swagger-ui .topbar .download-url-wrapper {
-    display: flex;
-    flex: 3;
-    justify-content: flex-end; }
-    .swagger-ui .topbar .download-url-wrapper input[type=text] {
-      width: 100%;
-      min-width: 350px;
-      margin: 0;
-      border: 2px solid #547f00;
-      outline: none; }
-    .swagger-ui .topbar .download-url-wrapper .select-label {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      max-width: 600px;
-      margin: 0; }
-      .swagger-ui .topbar .download-url-wrapper .select-label span {
-        font-size: 16px;
-        flex: 1;
-        padding: 0 10px 0 0;
-        text-align: right; }
-      .swagger-ui .topbar .download-url-wrapper .select-label select {
-        flex: 2;
-        width: 100%;
-        border: 2px solid #547f00;
-        outline: none;
-        box-shadow: none; }
-    .swagger-ui .topbar .download-url-wrapper .download-url-button {
-      font-size: 16px;
-      font-weight: bold;
-      padding: 4px 40px;
-      border: none;
-      border-radius: 0 4px 4px 0;
-      background: #547f00;
-      color: #fff; }
 
 .swagger-ui .info hgroup.main {
   margin: 0 0 20px 0; }
