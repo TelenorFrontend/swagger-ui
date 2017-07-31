@@ -21,7 +21,7 @@ body
     width: 100%;
     max-width: 1460px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0;
 }
 
 .opblock-tag-section
@@ -63,7 +63,7 @@ body
 @mixin method($color)
 {
     border-color: $color;
-    background: rgba($color, .1);
+    background: rgba($color, .05);
 
     .opblock-summary-method
     {
@@ -102,7 +102,7 @@ body
 
     small
     {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: normal;
 
         flex: 1;
@@ -115,7 +115,7 @@ body
 
 .parameter__type
 {
-    font-size: 12px;
+    font-size: 16px;
 
     padding: 5px 0;
 
@@ -165,7 +165,7 @@ body
 
         label
         {
-            font-size: 12px;
+            font-size: 16px;
             font-weight: bold;
 
             display: flex;
@@ -183,7 +183,7 @@ body
 
         h4
         {
-            font-size: 14px;
+            font-size: 16px;
 
             flex: 1;
 
@@ -195,7 +195,7 @@ body
 
     .opblock-summary-method
     {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: bold;
 
         min-width: 80px;
@@ -252,7 +252,7 @@ body
 
     .opblock-summary-operation-id
     {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .opblock-summary-description
@@ -361,27 +361,6 @@ body
 
         @include text_headline();
 
-        &:first-of-type
-        {
-            position: relative;
-
-            padding-left: 0;
-
-            &:after
-            {
-                position: absolute;
-                top: 0;
-                right: 6px;
-
-                width: 1px;
-                height: 100%;
-
-                content: '';
-
-                background: rgba(#000,.2);
-            }
-        }
-
         &.active
         {
             font-weight: bold;
@@ -393,7 +372,7 @@ body
 .opblock-external-docs-wrapper,
 .opblock-title_normal
 {
-    font-size: 12px;
+    font-size: 16px;
 
     margin: 0 0 5px 0;
     padding: 15px 20px;
@@ -402,7 +381,7 @@ body
 
     h4
     {
-        font-size: 12px;
+        font-size: 16px;
 
         margin: 0 0 5px 0;
 
@@ -411,7 +390,7 @@ body
 
     p
     {
-        font-size: 14px;
+        font-size: 16px;
 
         margin: 0;
 
@@ -465,7 +444,7 @@ body
     h5,
     h4
     {
-        font-size: 12px;
+        font-size: 16px;
 
         margin: 10px 0 5px 0;
 
@@ -475,7 +454,7 @@ body
 
 .response-col_status
 {
-    font-size: 14px;
+    font-size: 16px;
 
     @include text_body();
 
@@ -491,7 +470,7 @@ body
 {
     span
     {
-        font-size: 12px;
+        font-size: 16px;
         font-style: italic;
 
         display: block;
@@ -523,7 +502,7 @@ body
 
 .opblock-body pre
 {
-    font-size: 12px;
+    font-size: 16px;
 
     margin: 0;
     padding: 10px;
@@ -552,11 +531,10 @@ body
 
 .scheme-container
 {
-    margin: 0 0 20px 0;
-    padding: 30px 0;
+    padding-top: 24px;
+    padding-bottom: 12px;
 
     background: #fff;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
 
     .schemes
     {
@@ -565,7 +543,7 @@ body
 
          > label
         {
-            font-size: 12px;
+            font-size: 16px;
             font-weight: bold;
 
             display: flex;
