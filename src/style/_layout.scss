@@ -191,6 +191,11 @@ body
 
             @include text_headline();
         }
+
+        .try-out {
+          width: 100%;
+          text-align: right;
+        }
     }
 
     .opblock-summary-method
@@ -502,7 +507,7 @@ body
 
 .opblock-body pre
 {
-    font-size: 16px;
+    font-size: 14px;
 
     margin: 0;
     padding: 10px;
