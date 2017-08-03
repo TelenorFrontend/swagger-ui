@@ -39,10 +39,10 @@ Instantiate the SwaggerUi object as below:
 
 To set up a development environment, clone this repo and fetch the dist folder from [SwaggerUi](https://github.com/swagger-api/swagger-ui). It should contain everything needed to preview your changes. Modify the `dist/index.html` from [SwaggerUi](https://github.com/swagger-api/swagger-ui) as described in **How to use** and open it in a browser of your choice.
 
-To modify the layout, the react components can be found in `src/docs-preset` folder after cloning and installing the dependencies. The sccs can be found in `style`. After making your changes, run the following command to pack the preset and stylesheet.
+To modify the layout, the react components can be found in `src/docs-preset` folder after cloning and installing the dependencies. The sccs can be found in `style`. After making your changes, run the build script to pack the preset and stylesheet.
 
 ```
-$ npm run build-docs-preset
+$ npm run build
 ```
 
 ## License
