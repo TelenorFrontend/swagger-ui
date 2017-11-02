@@ -1,5 +1,5 @@
 {
-  "name": "swagger-ui-docs-preset",
+  "name": "@telenorfrontend/swagger-ui-docs-preset",
   "version": "0.1.0",
   "main": "dist/swagger-ui-docs-preset.js",
   "repository": "git@github.com:TelenorFrontend/swagger-ui-docs-preset.git",
